@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mathewjordan.github.io/homer
+
+# Sitemaps
+Sitemap: https://mathewjordan.github.io/homer/sitemap.xml
