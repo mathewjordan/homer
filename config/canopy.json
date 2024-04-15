@@ -1,0 +1,13 @@
+{
+ "collection": "https://harvardartmuseums.org/profile/mat@northwestern.edu/mycollections/9610/homer-4/iiif/top",
+ "featured": [
+   "https://iiif.harvardartmuseums.org/manifests/object/307849",
+   "https://iiif.harvardartmuseums.org/manifests/object/306171"
+ ],
+ "metadata": ["Date", "Classification"],
+ "theme": {
+   "accentColor": "red",
+   "grayColor": "sand",
+   "radius": "small"
+ }
+}
