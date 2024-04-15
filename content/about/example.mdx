@@ -1,146 +1,46 @@
 ---
-title: "Markdown Example"
-description: Demonstration content with Markdown and Components using the MDX library
+title: "Work of Winslow Homer"
 navigation: "about"
 referencedManifests:
-  - "https://api.dc.library.northwestern.edu/api/v2/works/84aec8c1-42e8-4e2c-a6b2-1c7e3790217f?as=iiif"
-  - "https://api.dc.library.northwestern.edu/api/v2/works/cd5e1b9c-370b-40e5-b3d9-defc1d8e0777?as=iiif"
-  - "https://api.dc.library.northwestern.edu/api/v2/works/15871197-1616-4c37-9257-b0ad0dc5ab30?as=iiif"
-  - "https://api.dc.library.northwestern.edu/api/v2/works/14a6aa15-9e12-47a7-9617-91f430d4f47b?as=iiif"
+  - "https://iiif.harvardartmuseums.org/manifests/object/230621"
+  - "https://iiif.harvardartmuseums.org/manifests/object/307849"
+  - "https://iiif.harvardartmuseums.org/manifests/object/306171"
 ---
 
-# Markdown Example
+# Winslow Homer: The Seascape Maestro and His Affinity for Boats
 
-Canopy IIIF is designed to work with Markdown using the [MDX](https://mdxjs.com/) library. This allows you to use Canopy defined components in our Markdown content to easily extend IIIF resources.
-This example page demonstrates some of components that are available for use reuse and remixing content in Markdown.
+[Winslow Homer (1836–1910)](https://en.wikipedia.org/wiki/Winslow_Homer) was an iconic American painter renowned for his powerful depiction of nature, often focusing on the sea and human interaction with it. Born in Boston, Massachusetts, Homer initially started his artistic career as a commercial illustrator but quickly transitioned to oil painting and watercolors, capturing scenes that brilliantly combine simplicity with a profound narrative depth.
 
-This page is output from the `/content/about/example.mdx` file.
+<Viewer iiifContent="https://iiif.harvardartmuseums.org/manifests/object/230621" />
 
-<ButtonWrapper>
-  <Button
-    children="Read Markdown Guide"
-    href="https://canopy-iiif.github.io/docs/create-markdown-content"
-    target="_blank"
-    buttonType="primary"
-  />
-</ButtonWrapper>
+## Early Influences and Themes
 
-## Example Markdown
+Homer's early work primarily consisted of rural and urban scenes, but his interest in marine subjects became evident after the Civil War. During this period, he frequently visited the frontlines, sketching battle scenes and everyday life of soldiers, which sharpened his skill in capturing human figures against vast landscapes. His post-war travels to various coastal communities in Massachusetts and Maine further intensified his fascination with maritime themes.
 
-Using generated Latin, a sample blockquote and paragraph is included below.
+## Development of Maritime Paintings
 
-> Aenean viverra quam sit amet sapien tempor, vel sagittis velit ultricies. In imperdiet posuere risus non sodales. Mauris posuere elit a lectus vehicula, nec ullamcorper metus aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+By the 1870s, Homer began to focus increasingly on the interaction between humans and the sea, a theme that would dominate his artistic output for the rest of his life. His stays in fishing villages on the northeast coast of America and his sojourns to England’s Tynemouth, where he was exposed to the harsh lives of fishermen and their families, deeply influenced his painting style and subjects.
 
-Pellentesque et scelerisque tellus, nec vehicula nisi. Mauris auctor nisl non bibendum varius. Donec nec pretium leo. Sed ut sapien metus. Nullam elementum est leo, ac ornare ipsum accumsan id. Sed nec metus sed lacus fringilla feugiat. Nulla ut nunc sem. Ut efficitur tincidunt mi. Curabitur sed dapibus ex.
+<Viewer iiifContent="https://mathewjordan.github.io/homer/api/facet/date/1880.json" />
 
-## Referencing Manifests
+## Boats in Homer's Art
 
-When authoring markdown content, users can reference IIIF Manifests in front matter. The referenced items can be output using the `<ReferencedItems />` component and will be rendered in a grid format. A link will automatically be created between the referenced item and the referencing content page.
+Boats, both as primary subjects and as integral parts of larger scenes, appear frequently in Homer's work. His boats are not just transport vessels; they are pivotal elements that interact with the sea in a dynamic and often metaphorical way. Paintings like _"The Fog Warning"_ and _"Breezing Up (A Fair Wind)"_ show small boats against the vastness of the ocean, highlighting the human struggle and resilience against natural forces. These artworks reflect Homer's deep understanding and respect for the sea's power and mystery.
 
-<ReferencedItems />
+## Mastery in Watercolors
 
-## Inserting a IIIF Viewer
+In his later years, Homer turned to watercolors, which allowed him to experiment more freely with vibrant colors and fluid, spontaneous strokes. His watercolor seascapes often include boats, portrayed with a remarkable sense of immediacy and atmospheric effect. The medium enabled him to capture the luminosity and mood of the sea with an unparalleled delicacy and strength.
 
-Users authoring content can bring a pan-zoom compatible IIIF Viewer into their content by using the `<Viewer />` component. The viewer will automatically be sized to the width of the content container.
+<Viewer iiifContent="https://mathewjordan.github.io/homer/api/facet/date/1897.json" />
 
-<Viewer iiifContent="https://api.dc.library.northwestern.edu/api/v2/works/cd5e1b9c-370b-40e5-b3d9-defc1d8e0777?as=iiif" />
+## Legacy and Influence
 
-## Inserting a IIIF Image (Single Image)
+Winslow Homer is celebrated not only for his mastery over form and color but also for his ability to depict the American spirit of the late 19th century. His boat scenes, whether showing fishermen at work or children at play, convey a timeless, universal quality that continues to resonate with audiences. Homer's work remains a vital part of American cultural heritage, preserving the rugged beauty of maritime life and landscapes.
 
-Users can also add a single IIIF Image to their content by using the `<Image />` component. The image can be rendered with a specified height. The label will be displayed below the image.
+**Key Highlights of Homer's Boat-Themed Artworks:**
 
-<Image
-  height="400px"
-  src="https://iiif.dc.library.northwestern.edu/iiif/2/edf54840-38c9-4a00-b180-0c038d77c6d2/full/1200,/0/default.jpg"
-  label="List of Plates: Volume Eight: Edward S. Curtis's The North American Indian"
-/>
+- **Dynamic interaction:** Boats are shown interacting dynamically with the sea, often reflecting human challenges and resilience.
+- **Atmospheric effects:** His watercolors capture the mood and luminosity of the sea, showcasing his skill with color and light.
+- **Narrative depth:** Each painting tells a story, reflecting themes of struggle, beauty, and survival.
 
-## Inserting a Card
-
-Users can also add a figure representing a Manifest to their content by using the `<Card />` component. The figure will include a rendered thumbnail for the Manifest, the label, and a link to the respective `/work` page. A Card does not create automatic linking from a `/work` page back to content pages.
-
-<Card iiifContent="https://api.dc.library.northwestern.edu/api/v2/works/19efac1e-5e79-471c-89c2-a60a775562ce?as=iiif" />
-
-## Leveraging Facets
-
-During the Canopy build process, new IIIF Collections are automatically generated from the source IIIF Collection. These new collections are faceted by the metadata fields that are defined in the Canopy configuration file. The faceted collections are available at the URL pattern `/api/facet/{label}/{value}.json`.
-
-The `<Viewer />` component can be used to display a faceted IIIF Collection by passing the URL of the faceted collection to the `iiifContent` prop. In this example we are passing the relative URL of the faceted collection for the `date` field with the value `1910` for the path `/api/facet/date/1910.json` to the `iiifContent` prop.
-
-### Viewer Component
-
-<Viewer iiifContent="https://canopy-iiif.github.io/canopy-iiif/api/facet/date/1910.json" />
-
-### Slider Component
-
-These can alternatively be rendered in `<Slider />` component.
-
-<Slider iiifContent="https://canopy-iiif.github.io/canopy-iiif/api/facet/date/1910.json" />
-
-## Example MDX
-
-```jsx
----
-title: "Markdown Example"
-navigation: "about"
-referencedManifests:
-  - "https://api.dc.library.northwestern.edu/api/v2/works/84aec8c1-42e8-4e2c-a6b2-1c7e3790217f?as=iiif"
-  - "https://api.dc.library.northwestern.edu/api/v2/works/cd5e1b9c-370b-40e5-b3d9-defc1d8e0777?as=iiif"
-  - "https://api.dc.library.northwestern.edu/api/v2/works/15871197-1616-4c37-9257-b0ad0dc5ab30?as=iiif"
-  - "https://api.dc.library.northwestern.edu/api/v2/works/14a6aa15-9e12-47a7-9617-91f430d4f47b?as=iiif"
----
-
-# Markdown Example
-
-Canopy IIIF is designed to work with Markdown using the [MDX](https://mdxjs.com/) library. This allows us to use React components in our Markdown content. This example page demonstrates the various components that are available for use in Markdown content, front matter, and compatible Canopy components that can augment and create links betwen your Markdown content and the IIIF Manifests contained in your source IIIF Collection. This page is output from the `/content/about/example.mdx` file.
-
-Using generated Latin, a sample blockquote and paragraph is included below.
-
-> Aenean viverra quam sit amet sapien tempor, vel sagittis velit ultricies. In imperdiet posuere risus non sodales. Mauris posuere elit a lectus vehicula, nec ullamcorper metus aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Pellentesque et scelerisque tellus, nec vehicula nisi. Mauris auctor nisl non bibendum varius. Donec nec pretium leo. Sed ut sapien metus. Nullam elementum est leo, ac ornare ipsum accumsan id. Sed nec metus sed lacus fringilla feugiat. Nulla ut nunc sem. Ut efficitur tincidunt mi. Curabitur sed dapibus ex.
-
-## Referencing Manifests
-
-When authoring markdown content, users can reference IIIF Manifests in front matter. The referenced items can be output using the `<ReferencedItems />` component and will be rendered in a grid format. A link will automatically be created between the referenced item and the referencing content page.
-
-<ReferencedItems />
-
-## Inserting a IIIF Viewer
-
-Users authoring content can bring a pan-zoom compatible IIIF Viewer into their content by using the `<Viewer />` component. The viewer will automatically be sized to the width of the content container.
-
-<Viewer iiifContent="https://api.dc.library.northwestern.edu/api/v2/works/cd5e1b9c-370b-40e5-b3d9-defc1d8e0777?as=iiif" />
-
-## Inserting a IIIF Image (Single Image)
-
-Users can also add a single IIIF Image to their content by using the `<Image />` component. The image can be rendered with a specified height. The label will be displayed below the image.
-
-<Image
-  height="400px"
-  src="https://iiif.dc.library.northwestern.edu/iiif/2/edf54840-38c9-4a00-b180-0c038d77c6d2/full/1200,/0/default.jpg"
-  label="List of Plates: Volume Eight: Edward S. Curtis's The North American Indian"
-/>
-
-## Inserting a Card
-
-Users can also add a figure representing a Manifest to their content by using the `<Card />` component. The figure will include a rendered thumbnail for the Manifest, the label, and a link to the respective `/work` page. A Card does not create automatic linking from a `/work` page back to content pages.
-
-<Card iiifContent="https://api.dc.library.northwestern.edu/api/v2/works/19efac1e-5e79-471c-89c2-a60a775562ce?as=iiif" />
-
-## Leveraging Facets
-
-During the Canopy build process, new IIIF Collections are automatically generated from the source IIIF Collection. These new collections are faceted by the metadata fields that are defined in the Canopy configuration file. The faceted collections are available at the URL pattern `/api/facet/{label}/{value}.json`.
-
-The `<Viewer />` component can be used to display a faceted IIIF Collection by passing the URL of the faceted collection to the `iiifContent` prop. In this example we are passing the relative URL of the faceted collection for the `date` field with the value `1910` for the path `/api/facet/date/1910.json` to the `iiifContent` prop.
-
-### Viewer Component
-
-<Viewer iiifContent="/api/facet/date/1910.json" />
-
-### Slider Component
-
-These can alternatively be rendered in `<Slider />` component.
-
-<Slider iiifContent="/api/facet/date/1910.json" />
-```
+Homer's paintings invite viewers to contemplate the deep and often tumultuous relationship between humanity and the natural world. Through his evocative portrayal of boats and the sea, he communicates both the peril and beauty of human endeavor, marking him as one of the foremost painters of his era.
